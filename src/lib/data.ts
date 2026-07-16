@@ -13,6 +13,8 @@ export const contact = { phone: "+55 11 93618-4473", email: "vinimachadosantana@
 export const socials: Social[] = [
   { name: "GitHub", href: "https://github.com/vinimachadosantana" },
   { name: "LinkedIn", href: "https://linkedin.com/in/vinimachadosantana" },
+  { name: "Twitter", href: "#" },
+  { name: "YouTube", href: "#" },
 ];
 
 export const hero = {
