@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#22222E] bg-[#0A0A0F]/80 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#home" className="font-display text-lg font-bold tracking-tight"><span className="text-[#6D5EFC]">◆</span> yourname</a>
+        <a href="#home" className="font-display text-lg font-bold tracking-tight"><span className="text-[#6D5EFC]">◆</span> Vinicius Machado</a>
         <ul className="hidden items-center gap-8 text-sm text-[#9A9AB2] md:flex">
           {nav.map((item) => (<li key={item.href}><a href={item.href} className="transition-colors hover:text-white">{item.label}</a></li>))}
         </ul>
