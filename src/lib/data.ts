@@ -18,10 +18,10 @@ export const socials: Social[] = [
 ];
 
 export const hero = {
-  eyebrow: "Developer",
+  eyebrow: "Web Developer",
   name: "Vinicius Machado",
-  blurb: "I build fast, accessible web apps with React, Next.js and TypeScript — from the database to a polished UI.",
-  badgeText: "Fullstack Developer • Available for work • ",
+  blurb: "I love solving problems. Give me an unclear problem and a deadline. I'll come back with something that works.",
+  badgeText: "Fullstack • Available for work • ",
 };
 
 export const skills: Skill[] = [
