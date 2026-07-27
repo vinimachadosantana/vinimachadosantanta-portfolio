@@ -12,7 +12,7 @@ export default function TopBar() {
         <div className="flex items-center gap-4">
           {socials.map((s) => {
             const Icon = icons[s.name];
-            return <a key={s.name} href={s.href} aria-label={s.name} className="transition-colors hover:text-white"><Icon size={15} /></a>;
+            return <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.name} className="transition-colors hover:text-white"><Icon size={15} /></a>;
           })}
         </div>
         <div className="flex items-center gap-6">
