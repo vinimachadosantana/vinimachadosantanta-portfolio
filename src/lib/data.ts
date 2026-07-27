@@ -25,9 +25,9 @@ export const hero = {
 };
 
 export const skills: Skill[] = [
-  { icon: "code", title: "Frontend Development", desc: "React, Next.js & TypeScript. Responsive, accessible interfaces that feel fast." },
-  { icon: "server", title: "Fullstack Apps", desc: "APIs, auth, databases with Node & Postgres. Shipping the whole product." },
-  { icon: "palette", title: "UI & Design Systems", desc: "Clean layouts, reusable components, and a consistent look with Tailwind." },
+  { icon: "code", title: "Frontend Development", desc: "Interfaces that are fast, accessible, and maintainable. I care about the details users feel — performance, responsiveness, and clean component architecture." },
+  { icon: "server", title: "Fullstack Apps", desc: "Services and APIs built to scale. Data modeling, auth, and the integrations that hold a product together." },
+  { icon: "palette", title: "UI & Design Systems", desc: "I own features from problem to production — architecture, build, tests, and deploy. Comfortable making the tradeoffs that ship good software on time." },
 ];
 
 export const steps: Step[] = [
