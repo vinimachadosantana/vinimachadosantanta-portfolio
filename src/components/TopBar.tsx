@@ -1,7 +1,9 @@
-import { GitBranch, SquareArrowOutUpRight, Bird, SquarePlay, Phone, Mail, MapPin } from "lucide-react";
+import { FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa6";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { socials, contact } from "@/lib/data";
 
-const icons: Record<string, React.ElementType> = { GitHub: GitBranch, LinkedIn: SquareArrowOutUpRight, Twitter: Bird, YouTube: SquarePlay };
+const icons: Record<string, React.ElementType> = { GitHub: FaGithub, LinkedIn: FaLinkedin, Twitter: FaTwitter, YouTube: FaYoutube };
 
 export default function TopBar() {
   return (
