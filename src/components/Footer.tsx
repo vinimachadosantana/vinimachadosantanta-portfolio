@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="flex gap-3">
             {socials.map((s) => {
               const Icon = icons[s.name];
-              return <a key={s.name} href={s.href} aria-label={s.name} className="rounded-lg border border-[#22222E] p-2 text-[#9A9AB2] transition-colors hover:border-[#6D5EFC]/60 hover:text-white"><Icon size={16} /></a>;
+              return <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.name} className="rounded-lg border border-[#22222E] p-2 text-[#9A9AB2] transition-colors hover:border-[#6D5EFC]/60 hover:text-white"><Icon size={16} /></a>;
             })}
           </div>
         </div>

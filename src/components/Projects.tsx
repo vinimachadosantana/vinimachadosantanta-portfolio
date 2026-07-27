@@ -18,7 +18,7 @@ export default function Projects() {
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
-          <a key={p.title} href={p.href} className="group overflow-hidden rounded-2xl border border-[#22222E] bg-[#13131C] transition-transform hover:-translate-y-1">
+          <a key={p.title} href={p.href} target="_blank" rel="noopener noreferrer" className="group overflow-hidden rounded-2xl border border-[#22222E] bg-[#13131C] transition-transform hover:-translate-y-1">
             <div className="flex aspect-video items-center justify-center" style={{ backgroundImage: `linear-gradient(135deg, ${p.from}, ${p.to})` }}>
               <span className="font-display text-2xl font-bold text-white/90">{p.title}</span>
             </div>
