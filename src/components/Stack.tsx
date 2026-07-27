@@ -1,8 +1,17 @@
+"use client";
+import { motion } from "motion/react";
 import { stack } from "@/lib/data";
 
 export default function Stack() {
   return (
-    <section id="stack" className="mx-auto max-w-6xl px-6 py-20">
+    <motion.section
+      id="stack"
+      className="mx-auto max-w-6xl px-6 py-20"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <div className="mb-12 text-center">
         <p className="text-sm uppercase tracking-widest text-[#6D5EFC]">Toolbox</p>
         <h2 className="font-display mt-2 text-3xl font-bold md:text-4xl">Tech I work with</h2>
@@ -27,6 +36,6 @@ export default function Stack() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

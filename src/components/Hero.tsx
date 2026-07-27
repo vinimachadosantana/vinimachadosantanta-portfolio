@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { ArrowRight, Gem } from "lucide-react";
 import { hero } from "@/lib/data";
@@ -5,7 +7,13 @@ import SpinBadge from "./SpinBadge";
 
 export default function Hero() {
   return (
-    <section id="home" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+    <motion.section
+      id="home"
+      className="mx-auto max-w-6xl px-6 py-20 md:py-28"
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <div className="grid items-center gap-12 md:grid-cols-2">
         <div>
           <p className="mb-3 text-sm uppercase tracking-widest text-[#9A9AB2]">{hero.eyebrow}</p>
@@ -30,6 +38,6 @@ export default function Hero() {
           <div className="animate-float absolute -left-3 top-1/3 h-6 w-6 rounded-full border-2 border-[#4F8CFF]/50" />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

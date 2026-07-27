@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import { Code2, Server, Palette } from "lucide-react";
 import { skills } from "@/lib/data";
 
@@ -5,7 +7,14 @@ const icons: Record<string, React.ElementType> = { code: Code2, server: Server, 
 
 export default function Skills() {
   return (
-    <section id="skills" className="mx-auto max-w-6xl px-6 py-20">
+    <motion.section
+      id="skills"
+      className="mx-auto max-w-6xl px-6 py-20"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <div className="mb-12 text-center">
         <p className="text-sm uppercase tracking-widest text-[#6D5EFC]">Speciality</p>
         <h2 className="font-display mt-2 text-3xl font-bold md:text-4xl">What I do</h2>
@@ -22,6 +31,6 @@ export default function Skills() {
           );
         })}
       </div>
-    </section>
+    </motion.section>
   );
 }
