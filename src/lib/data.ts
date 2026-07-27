@@ -1,8 +1,9 @@
-import type { NavItem, Social, Skill, Step, Project } from "./types";
+import type { NavItem, Social, Skill, StackGroup, Step, Project } from "./types";
 
 export const nav: NavItem[] = [
   { label: "Home", href: "#home" },
   { label: "Skills", href: "#skills" },
+  { label: "Stack", href: "#stack" },
   { label: "Process", href: "#process" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -28,6 +29,14 @@ export const skills: Skill[] = [
   { icon: "code", title: "Frontend Development", desc: "Interfaces that are fast, accessible, and maintainable. I care about the details users feel — performance, responsiveness, and clean component architecture." },
   { icon: "server", title: "Fullstack Apps", desc: "Services and APIs built to scale. Data modeling, auth, and the integrations that hold a product together." },
   { icon: "palette", title: "UI & Design Systems", desc: "I own features from problem to production — architecture, build, tests, and deploy. Comfortable making the tradeoffs that ship good software on time." },
+];
+
+export const stack: StackGroup[] = [
+  { label: "Languages", items: ["TypeScript", "JavaScript", "Ruby", "Kotlin", "SQL"] },
+  { label: "Frontend", items: ["React", "Next.js", "Angular", "Tailwind"] },
+  { label: "Backend", items: ["Node.js", "Ruby on Rails", "REST APIs"] },
+  { label: "Data", items: ["PostgreSQL", "MongoDB", "Prisma"] },
+  { label: "Tooling & Practices", items: ["Git", "CI/CD", "Rspec", "Testing Library", "Docker"] },
 ];
 
 export const steps: Step[] = [
